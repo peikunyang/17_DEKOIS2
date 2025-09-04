@@ -1,0 +1,180 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# =========================================
+# Input/Output (DECOY)
+# =========================================
+IN_DIR="/home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy"
+OUT_ROOT="/home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt"
+ONLY_TARGET=""
+
+# =========================================
+# Script dir & single aggregated failure log
+# =========================================
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+FAIL_LOG="${SCRIPT_DIR}/prepare_ligand_failures_decoy.log"
+echo "[INFO] Failures will be appended to: ${FAIL_LOG}"
+{
+  echo "============================================================"
+  echo "RUN @ $(date -Iseconds)"
+} >> "${FAIL_LOG}"
+
+# =========================================
+# Tooling (single pipeline: ADT/MGLTools + Open Babel)
+# =========================================
+# Run this script INSIDE the adt_py27 env so CONDA_PREFIX points to MGLTools.
+
+OBABEL_BIN="${OBABEL_BIN:-}"
+detect_obabel() {
+  shopt -s nullglob
+  local candidates=()
+  [[ -n "$OBABEL_BIN" ]] && candidates+=("$OBABEL_BIN")
+  local p; p="$(command -v obabel 2>/dev/null || true)"; [[ -n "$p" ]] && candidates+=("$p")
+  candidates+=("$HOME/miniconda3/envs"/*/bin/obabel)
+  candidates+=("/usr/local/bin/obabel" "/usr/bin/obabel")
+  for cand in "${candidates[@]}"; do
+    [[ -x "$cand" ]] || continue
+    if "$cand" -L formats | grep -Eiq '(^|[[:space:]])sdf([[:space:]]|$)|SDfile'; then
+      OBABEL_BIN="$cand"
+      echo "[INFO] Using obabel: $OBABEL_BIN"
+      return 0
+    fi
+  done
+  return 1
+}
+if ! detect_obabel; then
+  echo "[ERROR] Could not find a working 'obabel' with SDF support."
+  echo "        e.g., conda create -n obabel_py310 -c conda-forge python=3.10 openbabel"
+  exit 1
+fi
+
+[[ -n "${CONDA_PREFIX:-}" ]] || { echo "[ERROR] Run inside adt_py27 so CONDA_PREFIX is set."; exit 1; }
+PYSH="$CONDA_PREFIX/bin/pythonsh"
+PL4="$CONDA_PREFIX/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_ligand4.py"
+[[ -x "$PYSH" ]] || { echo "[ERROR] pythonsh not found at: $PYSH"; exit 1; }
+[[ -f "$PL4"  ]] || { echo "[ERROR] prepare_ligand4.py not found at: $PL4"; exit 1; }
+
+# =========================================
+# Helpers
+# =========================================
+to_lower() { echo "$1" | tr '[:upper:]' '[:lower:]'; }
+pad4() { printf "%04d" "$1"; }
+# For decoy filenames like "PIM-2_Celling-v1.12_decoyset.sdf",
+# extract prefix before the first underscore as target key, e.g., "PIM-2".
+target_from_file() {
+  local base_noext="$1"            # e.g., PIM-2_Celling-v1.12_decoyset
+  echo "${base_noext%%_*}"         # -> PIM-2
+}
+
+# =========================================
+# Temp workspace
+# =========================================
+TMP_ROOT="${TMPDIR:-/tmp}/mol2_split_decoy_$$"
+mkdir -p "$TMP_ROOT"
+trap 'rm -rf "$TMP_ROOT"' EXIT
+
+convert_one_sdf() {
+  local sdf_path="$1"
+  local base_noext; base_noext="$(basename "$sdf_path" .sdf)"         # e.g., PIM-2_Celling-v1.12_decoyset
+  local target_key; target_key="$(target_from_file "$base_noext")"     # e.g., PIM-2
+  local target_dir; target_dir="$(to_lower "$target_key")"             # e.g., pim-2
+  local out_dir="${OUT_ROOT}/${target_dir}/decoy"
+
+  mkdir -p "$out_dir"
+  echo "[INFO] Processing: $sdf_path -> $out_dir"
+
+  # 1) Split SDF directly into multiple MOL2 with Gasteiger charges at pH 7.4
+  local split_dir="${TMP_ROOT}/${base_noext}"
+  mkdir -p "$split_dir"
+  if ! "$OBABEL_BIN" -isdf "$sdf_path" -omol2 -O "${split_dir}/${target_key}.mol2" -m -p 7.4 --partialcharge gasteiger --errorlevel 1; then
+    echo "[ERROR] Open Babel failed to convert SDF to MOL2: $sdf_path"
+    return 1
+  fi
+
+  # 2) For each MOL2 -> PDBQT via ADT
+  shopt -s nullglob
+  local idx=0 ok=0 fail=0
+  for mol2 in $(ls -1 "${split_dir}/${target_key}"*.mol2 | sort -V); do
+    idx=$((idx+1))
+    local tag; tag="$(pad4 "$idx")"
+    local stem="${target_key}_${tag}"
+    local out_pdbqt="${out_dir}/${stem}.pdbqt"
+
+    pushd "$split_dir" >/dev/null
+      local mol2_base; mol2_base="$(basename "$mol2")"
+      if [[ ! -s "$mol2_base" ]]; then
+        {
+          echo "---- FAIL ${target_key} [${tag}] ${mol2_base} ----"
+          echo "Reason: empty or missing MOL2"
+        } >> "${FAIL_LOG}"
+        fail=$((fail+1))
+        popd >/dev/null
+        continue
+      fi
+
+      # Attempt 1: ADT on MOL2, keep existing charges (no -C)
+      set +e
+      out1="$("$PYSH" "$PL4" -l "$mol2_base" -o "$out_pdbqt" -A hydrogens -U nphs_lps 2>&1)"
+      rc1=$?
+      set -e
+      if [[ $rc1 -eq 0 ]]; then
+        ok=$((ok+1))
+        popd >/dev/null
+        continue
+      fi
+
+      # Attempt 2: MOL2 -> PDB, then ADT with -C on PDB
+      set +e
+      pdb_tmp="${stem}.tmp.pdb"
+      out2a="$("$OBABEL_BIN" -imol2 "$mol2_base" -opdb -O "$pdb_tmp" --errorlevel 1 2>&1)"; rc2a=$?
+      out2b=""; rc2b=1
+      if [[ $rc2a -eq 0 ]]; then
+        out2b="$("$PYSH" "$PL4" -l "$pdb_tmp" -o "$out_pdbqt" -A hydrogens -U nphs_lps -C 2>&1)"; rc2b=$?
+      fi
+      set -e
+      rm -f "$pdb_tmp" || true
+
+      if [[ $rc2a -eq 0 && $rc2b -eq 0 ]]; then
+        ok=$((ok+1))
+      else
+        {
+          echo "---- FAIL ${target_key} [${tag}] ${mol2_base} ----"
+          echo "[Attempt 1] MOL2 -> ADT (no -C) rc=${rc1}"
+          echo "${out1}"
+          echo "[Attempt 2] MOL2 -> PDB rc=${rc2a}"
+          echo "${out2a}"
+          echo "[Attempt 2] PDB -> ADT (-C) rc=${rc2b}"
+          echo "${out2b}"
+        } >> "${FAIL_LOG}"
+        fail=$((fail+1))
+      fi
+    popd >/dev/null
+  done
+
+  echo "[INFO] Done: ${target_key} (ok=${ok}, fail=${fail}, total=${idx})"
+}
+
+# =========================================
+# Main
+# =========================================
+shopt -s nullglob
+declare -a sdf_list
+if [[ -n "$ONLY_TARGET" ]]; then
+  # Accept patterns like "PIM-2", "pim-2"; match files that start with that prefix
+  mapfile -t sdf_list < <(find "$IN_DIR" -maxdepth 1 -type f -name "${ONLY_TARGET}"'*.sdf' | sort)
+else
+  mapfile -t sdf_list < <(find "$IN_DIR" -maxdepth 1 -type f -name "*.sdf" | sort)
+fi
+
+if [[ "${#sdf_list[@]}" -eq 0 ]]; then
+  echo "[WARN] No .sdf files found in: $IN_DIR"
+  exit 0
+fi
+
+for sdf in "${sdf_list[@]}"; do
+  [[ -f "$sdf" ]] || { echo "[WARN] Skip missing file: $sdf"; continue; }
+  convert_one_sdf "$sdf"
+done
+
+echo "[ALL DONE]"
+

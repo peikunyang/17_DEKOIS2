@@ -1,0 +1,335 @@
+[INFO] Failures will be appended to: /home/kun/job/17_DEKOIS2/2_pdbqt/5_decoy/prepare_ligand_failures_decoy.log
+[INFO] Using obabel: /usr/bin/obabel
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/11betaHSD1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/11betahsd1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/11betaHSD1_Celling-v1.12_decoyset/11betaHSD11.mol2
+[INFO] Done: 11betaHSD1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/17betaHSD1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/17betahsd1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/17betaHSD1_Celling-v1.12_decoyset/17betaHSD11.mol2
+[INFO] Done: 17betaHSD1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/A2A_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/a2a/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/A2A_Celling-v1.12_decoyset/A2A1.mol2
+[INFO] Done: A2A (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ACE2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ace2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ACE2_Celling-v1.12_decoyset/ACE21.mol2
+[INFO] Done: ACE2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ACE_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ace/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ACE_Celling-v1.12_decoyset/ACE1.mol2
+[INFO] Done: ACE (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ACHE_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ache/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ACHE_Celling-v1.12_decoyset/ACHE1.mol2
+[INFO] Done: ACHE (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ADAM17_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/adam17/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ADAM17_Celling-v1.12_decoyset/ADAM171.mol2
+[INFO] Done: ADAM17 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ADRB2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/adrb2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ADRB2_Celling-v1.12_decoyset/ADRB21.mol2
+[INFO] Done: ADRB2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/AKT1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/akt1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/AKT1_Celling-v1.12_decoyset/AKT11.mol2
+[INFO] Done: AKT1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ALR2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/alr2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ALR2_Celling-v1.12_decoyset/ALR21.mol2
+[INFO] Done: ALR2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/AR_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ar/decoy
+==============================
+*** Open Babel Warning  in ReadMolecule
+  Failed to kekulize aromatic bonds in MOL file (title is ZINC06322647)
+
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/AR_Celling-v1.12_decoyset/AR1.mol2
+[INFO] Done: AR (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/AURKA_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/aurka/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/AURKA_Celling-v1.12_decoyset/AURKA1.mol2
+[INFO] Done: AURKA (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/AURKB_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/aurkb/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/AURKB_Celling-v1.12_decoyset/AURKB1.mol2
+[INFO] Done: AURKB (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/BCL2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/bcl2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/BCL2_Celling-v1.12_decoyset/BCL21.mol2
+[INFO] Done: BCL2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/BRAF_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/braf/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/BRAF_Celling-v1.12_decoyset/BRAF1.mol2
+[INFO] Done: BRAF (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/CATL_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/catl/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/CATL_Celling-v1.12_decoyset/CATL1.mol2
+[INFO] Done: CATL (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/CDK2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/cdk2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/CDK2_Celling-v1.12_decoyset/CDK21.mol2
+[INFO] Done: CDK2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/COX1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/cox1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/COX1_Celling-v1.12_decoyset/COX11.mol2
+[INFO] Done: COX1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/COX2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/cox2/decoy
+==============================
+*** Open Babel Warning  in ReadMolecule
+  Failed to kekulize aromatic bonds in MOL file (title is ZINC06548907)
+
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/COX2_Celling-v1.12_decoyset/COX21.mol2
+[INFO] Done: COX2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/CTSK_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ctsk/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/CTSK_Celling-v1.12_decoyset/CTSK1.mol2
+[INFO] Done: CTSK (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/CYP2A6_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/cyp2a6/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/CYP2A6_Celling-v1.12_decoyset/CYP2A61.mol2
+[INFO] Done: CYP2A6 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/DHFR_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/dhfr/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/DHFR_Celling-v1.12_decoyset/DHFR1.mol2
+[INFO] Done: DHFR (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/EGFR_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/egfr/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/EGFR_Celling-v1.12_decoyset/EGFR1.mol2
+[INFO] Done: EGFR (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/EPHB4_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ephb4/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/EPHB4_Celling-v1.12_decoyset/EPHB41.mol2
+[INFO] Done: EPHB4 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ERBB2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/erbb2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ERBB2_Celling-v1.12_decoyset/ERBB21.mol2
+[INFO] Done: ERBB2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ER-beta_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/er-beta/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ER-beta_Celling-v1.12_decoyset/ER-beta1.mol2
+[INFO] Done: ER-beta (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/FGFR1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/fgfr1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/FGFR1_Celling-v1.12_decoyset/FGFR11.mol2
+[INFO] Done: FGFR1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/FKBP1A_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/fkbp1a/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/FKBP1A_Celling-v1.12_decoyset/FKBP1A1.mol2
+[INFO] Done: FKBP1A (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/FXA_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/fxa/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/FXA_Celling-v1.12_decoyset/FXA1.mol2
+[INFO] Done: FXA (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/GBA_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/gba/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/GBA_Celling-v1.12_decoyset/GBA1.mol2
+[INFO] Done: GBA (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/GR_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/gr/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/GR_Celling-v1.12_decoyset/GR1.mol2
+[INFO] Done: GR (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/GSK3B_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/gsk3b/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/GSK3B_Celling-v1.12_decoyset/GSK3B1.mol2
+[INFO] Done: GSK3B (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/HDAC2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hdac2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/HDAC2_Celling-v1.12_decoyset/HDAC21.mol2
+[INFO] Done: HDAC2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/HDAC8_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hdac8/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/HDAC8_Celling-v1.12_decoyset/HDAC81.mol2
+[INFO] Done: HDAC8 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/HIV1PR_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hiv1pr/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/HIV1PR_Celling-v1.12_decoyset/HIV1PR1.mol2
+[INFO] Done: HIV1PR (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/HIV1RT_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hiv1rt/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/HIV1RT_Celling-v1.12_decoyset/HIV1RT1.mol2
+[INFO] Done: HIV1RT (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/HMGR_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hmgr/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/HMGR_Celling-v1.12_decoyset/HMGR1.mol2
+[INFO] Done: HMGR (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/HSP90_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hsp90/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/HSP90_Celling-v1.12_decoyset/HSP901.mol2
+[INFO] Done: HSP90 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/IGF1R_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/igf1r/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/IGF1R_Celling-v1.12_decoyset/IGF1R1.mol2
+[INFO] Done: IGF1R (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/INHA_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/inha/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/INHA_Celling-v1.12_decoyset/INHA1.mol2
+[INFO] Done: INHA (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ITK_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/itk/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ITK_Celling-v1.12_decoyset/ITK1.mol2
+[INFO] Done: ITK (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/JAK3_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/jak3/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/JAK3_Celling-v1.12_decoyset/JAK31.mol2
+[INFO] Done: JAK3 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/JNK1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/jnk1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/JNK1_Celling-v1.12_decoyset/JNK11.mol2
+[INFO] Done: JNK1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/JNK2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/jnk2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/JNK2_Celling-v1.12_decoyset/JNK21.mol2
+[INFO] Done: JNK2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/JNK3_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/jnk3/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/JNK3_Celling-v1.12_decoyset/JNK31.mol2
+[INFO] Done: JNK3 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/KIF11_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/kif11/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/KIF11_Celling-v1.12_decoyset/KIF111.mol2
+[INFO] Done: KIF11 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/LCK_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/lck/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/LCK_Celling-v1.12_decoyset/LCK1.mol2
+[INFO] Done: LCK (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/MDM2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/mdm2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/MDM2_Celling-v1.12_decoyset/MDM21.mol2
+[INFO] Done: MDM2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/MK2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/mk2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/MK2_Celling-v1.12_decoyset/MK21.mol2
+[INFO] Done: MK2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/MMP2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/mmp2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/MMP2_Celling-v1.12_decoyset/MMP21.mol2
+[INFO] Done: MMP2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/NA_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/na/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/NA_Celling-v1.12_decoyset/NA1.mol2
+[INFO] Done: NA (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/P38-alpha_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/p38-alpha/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/P38-alpha_Celling-v1.12_decoyset/P38-alpha1.mol2
+[INFO] Done: P38-alpha (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PARP-1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/parp-1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PARP-1_Celling-v1.12_decoyset/PARP-11.mol2
+[INFO] Done: PARP-1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PDE4B_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pde4b/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PDE4B_Celling-v1.12_decoyset/PDE4B1.mol2
+[INFO] Done: PDE4B (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PDE5_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pde5/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PDE5_Celling-v1.12_decoyset/PDE51.mol2
+[INFO] Done: PDE5 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PDK1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pdk1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PDK1_Celling-v1.12_decoyset/PDK11.mol2
+[INFO] Done: PDK1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PI3Kg_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pi3kg/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PI3Kg_Celling-v1.12_decoyset/PI3Kg1.mol2
+[INFO] Done: PI3Kg (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PIM-1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pim-1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PIM-1_Celling-v1.12_decoyset/PIM-11.mol2
+[INFO] Done: PIM-1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PIM-2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pim-2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PIM-2_Celling-v1.12_decoyset/PIM-21.mol2
+[INFO] Done: PIM-2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PNP_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pnp/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PNP_Celling-v1.12_decoyset/PNP1.mol2
+[INFO] Done: PNP (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PPARA_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ppara/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PPARA_Celling-v1.12_decoyset/PPARA1.mol2
+[INFO] Done: PPARA (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PPARG_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pparg/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PPARG_Celling-v1.12_decoyset/PPARG1.mol2
+[INFO] Done: PPARG (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PR_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pr/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PR_Celling-v1.12_decoyset/PR1.mol2
+[INFO] Done: PR (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PRKCQ_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/prkcq/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PRKCQ_Celling-v1.12_decoyset/PRKCQ1.mol2
+[INFO] Done: PRKCQ (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PYGL-in_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pygl-in/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PYGL-in_Celling-v1.12_decoyset/PYGL-in1.mol2
+[INFO] Done: PYGL-in (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/PYGL-out_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pygl-out/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/PYGL-out_Celling-v1.12_decoyset/PYGL-out1.mol2
+[INFO] Done: PYGL-out (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/QPCT_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/qpct/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/QPCT_Celling-v1.12_decoyset/QPCT1.mol2
+[INFO] Done: QPCT (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/ROCK-1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/rock-1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/ROCK-1_Celling-v1.12_decoyset/ROCK-11.mol2
+[INFO] Done: ROCK-1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/RXR_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/rxr/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/RXR_Celling-v1.12_decoyset/RXR1.mol2
+[INFO] Done: RXR (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/SARS-HCoV_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/sars-hcov/decoy
+1170 molecules converted
+1170 files output. The first is /tmp/mol2_split_decoy_757348/SARS-HCoV_Celling-v1.12_decoyset/SARS-HCoV1.mol2
+[INFO] Done: SARS-HCoV (ok=1170, fail=0, total=1170)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/SIRT2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/sirt2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/SIRT2_Celling-v1.12_decoyset/SIRT21.mol2
+[INFO] Done: SIRT2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/SRC_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/src/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/SRC_Celling-v1.12_decoyset/SRC1.mol2
+[INFO] Done: SRC (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/Thrombin_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/thrombin/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/Thrombin_Celling-v1.12_decoyset/Thrombin1.mol2
+[INFO] Done: Thrombin (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/TIE2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/tie2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/TIE2_Celling-v1.12_decoyset/TIE21.mol2
+[INFO] Done: TIE2 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/TK_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/tk/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/TK_Celling-v1.12_decoyset/TK1.mol2
+[INFO] Done: TK (ok=1198, fail=2, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/TPA_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/tpa/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/TPA_Celling-v1.12_decoyset/TPA1.mol2
+[INFO] Done: TPA (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/TP_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/tp/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/TP_Celling-v1.12_decoyset/TP1.mol2
+[INFO] Done: TP (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/TS_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ts/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/TS_Celling-v1.12_decoyset/TS1.mol2
+[INFO] Done: TS (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/uPA_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/upa/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/uPA_Celling-v1.12_decoyset/uPA1.mol2
+[INFO] Done: uPA (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/VEGFR1_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/vegfr1/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/VEGFR1_Celling-v1.12_decoyset/VEGFR11.mol2
+[INFO] Done: VEGFR1 (ok=1200, fail=0, total=1200)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/3_decoy/VEGFR2_Celling-v1.12_decoyset.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/vegfr2/decoy
+1200 molecules converted
+1200 files output. The first is /tmp/mol2_split_decoy_757348/VEGFR2_Celling-v1.12_decoyset/VEGFR21.mol2
+[INFO] Done: VEGFR2 (ok=1200, fail=0, total=1200)
+[ALL DONE]

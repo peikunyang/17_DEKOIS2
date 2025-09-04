@@ -1,0 +1,327 @@
+[INFO] Failures will be appended to: /home/kun/job/17_DEKOIS2/2_pdbqt/4_activate/prepare_ligand_failures.log
+[INFO] Using obabel: /usr/bin/obabel
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/11betaHSD1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/11betahsd1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/11betaHSD1/11betaHSD11.mol2
+[INFO] Done: 11betaHSD1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/17betaHSD1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/17betahsd1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/17betaHSD1/17betaHSD11.mol2
+[INFO] Done: 17betaHSD1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/A2A.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/a2a/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/A2A/A2A1.mol2
+[INFO] Done: A2A (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ACE2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ace2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ACE2/ACE21.mol2
+[INFO] Done: ACE2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ACE.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ace/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ACE/ACE1.mol2
+[INFO] Done: ACE (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ACHE.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ache/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ACHE/ACHE1.mol2
+[INFO] Done: ACHE (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ADAM17.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/adam17/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ADAM17/ADAM171.mol2
+[INFO] Done: ADAM17 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ADRB2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/adrb2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ADRB2/ADRB21.mol2
+[INFO] Done: ADRB2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/AKT1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/akt1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/AKT1/AKT11.mol2
+[INFO] Done: AKT1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ALR2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/alr2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ALR2/ALR21.mol2
+[INFO] Done: ALR2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/AR.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ar/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/AR/AR1.mol2
+[INFO] Done: AR (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/AURKA.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/aurka/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/AURKA/AURKA1.mol2
+[INFO] Done: AURKA (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/AURKB.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/aurkb/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/AURKB/AURKB1.mol2
+[INFO] Done: AURKB (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/BCL2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/bcl2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/BCL2/BCL21.mol2
+[INFO] Done: BCL2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/BRAF.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/braf/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/BRAF/BRAF1.mol2
+[INFO] Done: BRAF (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/CATL.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/catl/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/CATL/CATL1.mol2
+[INFO] Done: CATL (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/CDK2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/cdk2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/CDK2/CDK21.mol2
+[INFO] Done: CDK2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/COX1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/cox1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/COX1/COX11.mol2
+[INFO] Done: COX1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/COX2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/cox2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/COX2/COX21.mol2
+[INFO] Done: COX2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/CTSK.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ctsk/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/CTSK/CTSK1.mol2
+[INFO] Done: CTSK (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/CYP2A6.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/cyp2a6/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/CYP2A6/CYP2A61.mol2
+[INFO] Done: CYP2A6 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/DHFR.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/dhfr/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/DHFR/DHFR1.mol2
+[INFO] Done: DHFR (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/EGFR.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/egfr/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/EGFR/EGFR1.mol2
+[INFO] Done: EGFR (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/EPHB4.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ephb4/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/EPHB4/EPHB41.mol2
+[INFO] Done: EPHB4 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ERBB2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/erbb2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ERBB2/ERBB21.mol2
+[INFO] Done: ERBB2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ER-beta.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/er-beta/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ER-beta/ER-beta1.mol2
+[INFO] Done: ER-beta (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/FGFR1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/fgfr1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/FGFR1/FGFR11.mol2
+[INFO] Done: FGFR1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/FKBP1A.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/fkbp1a/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/FKBP1A/FKBP1A1.mol2
+[INFO] Done: FKBP1A (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/FXA.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/fxa/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/FXA/FXA1.mol2
+[INFO] Done: FXA (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/GBA.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/gba/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/GBA/GBA1.mol2
+[INFO] Done: GBA (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/GR.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/gr/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/GR/GR1.mol2
+[INFO] Done: GR (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/GSK3B.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/gsk3b/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/GSK3B/GSK3B1.mol2
+[INFO] Done: GSK3B (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/HDAC2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hdac2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/HDAC2/HDAC21.mol2
+[INFO] Done: HDAC2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/HDAC8.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hdac8/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/HDAC8/HDAC81.mol2
+[INFO] Done: HDAC8 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/HIV1PR.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hiv1pr/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/HIV1PR/HIV1PR1.mol2
+[INFO] Done: HIV1PR (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/HIV1RT.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hiv1rt/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/HIV1RT/HIV1RT1.mol2
+[INFO] Done: HIV1RT (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/HMGR.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hmgr/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/HMGR/HMGR1.mol2
+[INFO] Done: HMGR (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/HSP90.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/hsp90/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/HSP90/HSP901.mol2
+[INFO] Done: HSP90 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/IGF1R.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/igf1r/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/IGF1R/IGF1R1.mol2
+[INFO] Done: IGF1R (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/INHA.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/inha/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/INHA/INHA1.mol2
+[INFO] Done: INHA (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ITK.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/itk/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ITK/ITK1.mol2
+[INFO] Done: ITK (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/JAK3.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/jak3/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/JAK3/JAK31.mol2
+[INFO] Done: JAK3 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/JNK1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/jnk1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/JNK1/JNK11.mol2
+[INFO] Done: JNK1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/JNK2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/jnk2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/JNK2/JNK21.mol2
+[INFO] Done: JNK2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/JNK3.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/jnk3/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/JNK3/JNK31.mol2
+[INFO] Done: JNK3 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/KIF11.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/kif11/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/KIF11/KIF111.mol2
+[INFO] Done: KIF11 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/LCK.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/lck/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/LCK/LCK1.mol2
+[INFO] Done: LCK (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/MDM2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/mdm2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/MDM2/MDM21.mol2
+[INFO] Done: MDM2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/MK2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/mk2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/MK2/MK21.mol2
+[INFO] Done: MK2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/MMP2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/mmp2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/MMP2/MMP21.mol2
+[INFO] Done: MMP2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/NA.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/na/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/NA/NA1.mol2
+[INFO] Done: NA (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/P38-alpha.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/p38-alpha/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/P38-alpha/P38-alpha1.mol2
+[INFO] Done: P38-alpha (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PARP-1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/parp-1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PARP-1/PARP-11.mol2
+[INFO] Done: PARP-1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PDE4B.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pde4b/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PDE4B/PDE4B1.mol2
+[INFO] Done: PDE4B (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PDE5.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pde5/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PDE5/PDE51.mol2
+[INFO] Done: PDE5 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PDK1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pdk1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PDK1/PDK11.mol2
+[INFO] Done: PDK1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PI3Kg.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pi3kg/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PI3Kg/PI3Kg1.mol2
+[INFO] Done: PI3Kg (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PIM-1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pim-1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PIM-1/PIM-11.mol2
+[INFO] Done: PIM-1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PIM-2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pim-2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PIM-2/PIM-21.mol2
+[INFO] Done: PIM-2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PNP.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pnp/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PNP/PNP1.mol2
+[INFO] Done: PNP (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PPARA.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ppara/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PPARA/PPARA1.mol2
+[INFO] Done: PPARA (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PPARG.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pparg/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PPARG/PPARG1.mol2
+[INFO] Done: PPARG (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PRKCQ.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/prkcq/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PRKCQ/PRKCQ1.mol2
+[INFO] Done: PRKCQ (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PR.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pr/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PR/PR1.mol2
+[INFO] Done: PR (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PYGL-in.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pygl-in/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PYGL-in/PYGL-in1.mol2
+[INFO] Done: PYGL-in (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/PYGL-out.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/pygl-out/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/PYGL-out/PYGL-out1.mol2
+[INFO] Done: PYGL-out (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/QPCT.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/qpct/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/QPCT/QPCT1.mol2
+[INFO] Done: QPCT (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/ROCK-1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/rock-1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/ROCK-1/ROCK-11.mol2
+[INFO] Done: ROCK-1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/RXR.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/rxr/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/RXR/RXR1.mol2
+[INFO] Done: RXR (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/SARS-HCoV.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/sars-hcov/active
+39 molecules converted
+39 files output. The first is /tmp/mol2_split_701354/SARS-HCoV/SARS-HCoV1.mol2
+[INFO] Done: SARS-HCoV (ok=39, fail=0, total=39)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/SIRT2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/sirt2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/SIRT2/SIRT21.mol2
+[INFO] Done: SIRT2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/SRC.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/src/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/SRC/SRC1.mol2
+[INFO] Done: SRC (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/Thrombin.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/thrombin/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/Thrombin/Thrombin1.mol2
+[INFO] Done: Thrombin (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/TIE2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/tie2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/TIE2/TIE21.mol2
+[INFO] Done: TIE2 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/TK.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/tk/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/TK/TK1.mol2
+[INFO] Done: TK (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/TPA.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/tpa/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/TPA/TPA1.mol2
+[INFO] Done: TPA (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/TP.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/tp/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/TP/TP1.mol2
+[INFO] Done: TP (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/TS.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/ts/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/TS/TS1.mol2
+[INFO] Done: TS (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/uPA.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/upa/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/uPA/uPA1.mol2
+[INFO] Done: uPA (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/VEGFR1.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/vegfr1/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/VEGFR1/VEGFR11.mol2
+[INFO] Done: VEGFR1 (ok=40, fail=0, total=40)
+[INFO] Processing: /home/kun/job/17_DEKOIS2/1_ori/2_sdf/2_active/VEGFR2.sdf -> /home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt/vegfr2/active
+40 molecules converted
+40 files output. The first is /tmp/mol2_split_701354/VEGFR2/VEGFR21.mol2
+[INFO] Done: VEGFR2 (ok=40, fail=0, total=40)
+[ALL DONE]

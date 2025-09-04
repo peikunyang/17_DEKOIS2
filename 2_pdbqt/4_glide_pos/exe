@@ -1,0 +1,195 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# =========================================
+# Inputs (process ALL targets under ROOT_IN)
+# =========================================
+# e.g. ROOT_IN/<target>/glide_pos/*.sdf  (each SDF has ONE molecule)
+ROOT_IN="/home/kun/job/17_DEKOIS2/1_ori/1_smiles/DEKOIS2"
+OUT_ROOT="/home/kun/job/17_DEKOIS2/2_pdbqt/1_pdbqt"
+
+# Optional filters:
+#   ONLY_TARGET="pde4b"  -> process only this target folder
+#   ONLY_FILE="ZINC02679514" -> process only this SDF basename within the target(s)
+ONLY_TARGET=""
+ONLY_FILE=""
+
+# =========================================
+# Script dir & single aggregated failure log
+# =========================================
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+FAIL_LOG="${SCRIPT_DIR}/prepare_ligand_failures_glide_pos.log"
+echo "[INFO] Failures will be appended to: ${FAIL_LOG}"
+{
+  echo "============================================================"
+  echo "RUN @ $(date -Iseconds)"
+} >> "${FAIL_LOG}"
+
+# =========================================
+# Tooling (single pipeline: ADT/MGLTools + Open Babel)
+# =========================================
+# Run this script INSIDE the adt_py27 env so CONDA_PREFIX points to MGLTools.
+
+OBABEL_BIN="${OBABEL_BIN:-}"
+detect_obabel() {
+  shopt -s nullglob
+  local candidates=()
+  [[ -n "$OBABEL_BIN" ]] && candidates+=("$OBABEL_BIN")
+  local p; p="$(command -v obabel 2>/dev/null || true)"; [[ -n "$p" ]] && candidates+=("$p")
+  candidates+=("$HOME/miniconda3/envs"/*/bin/obabel)
+  candidates+=("/usr/local/bin/obabel" "/usr/bin/obabel")
+  for cand in "${candidates[@]}"; do
+    [[ -x "$cand" ]] || continue
+    if "$cand" -L formats | grep -Eiq '(^|[[:space:]])sdf([[:space:]]|$)|SDfile'; then
+      OBABEL_BIN="$cand"
+      echo "[INFO] Using obabel: $OBABEL_BIN"
+      return 0
+    fi
+  done
+  return 1
+}
+if ! detect_obabel; then
+  echo "[ERROR] Could not find a working 'obabel' with SDF support."
+  echo "        e.g., conda create -n obabel_py310 -c conda-forge python=3.10 openbabel"
+  exit 1
+fi
+
+[[ -n "${CONDA_PREFIX:-}" ]] || { echo "[ERROR] Run inside adt_py27 so CONDA_PREFIX is set."; exit 1; }
+PYSH="$CONDA_PREFIX/bin/pythonsh"
+PL4="$CONDA_PREFIX/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_ligand4.py"
+[[ -x "$PYSH" ]] || { echo "[ERROR] pythonsh not found at: $PYSH"; exit 1; }
+[[ -f "$PL4"  ]] || { echo "[ERROR] prepare_ligand4.py not found at: $PL4"; exit 1; }
+
+# =========================================
+# Helpers
+# =========================================
+to_lower() { echo "$1" | tr '[:upper:]' '[:lower:]'; }
+
+# =========================================
+# Temp workspace
+# =========================================
+TMP_ROOT="${TMPDIR:-/tmp}/glide_pos_all_$$"
+mkdir -p "$TMP_ROOT"
+trap 'rm -rf "$TMP_ROOT"' EXIT
+
+convert_one_file() {
+  local target_key="$1"     # e.g., pde4b
+  local sdf_file="$2"       # full path to SDF
+  local out_dir="$3"        # OUT_ROOT/<target>/glide_pos
+
+  local base; base="$(basename "$sdf_file" .sdf)"   # e.g., ZINC02679514
+  local work="${TMP_ROOT}/${target_key}_${base}"
+  mkdir -p "$work"
+
+  # SDF (single molecule) -> MOL2 with Gasteiger charges at pH 7.4
+  if ! "$OBABEL_BIN" -isdf "$sdf_file" -omol2 -O "${work}/${base}.mol2" -p 7.4 --partialcharge gasteiger --errorlevel 1; then
+    {
+      echo "---- FAIL ${target_key} ${base}.sdf ----"
+      echo "[obabel] SDF -> MOL2 failed"
+    } >> "${FAIL_LOG}"
+    return 1
+  fi
+
+  local out_pdbqt="${out_dir}/${base}.pdbqt"
+
+  # Run ADT from work dir (some builds drop directory components)
+  pushd "$work" >/dev/null
+    set +e
+    # Attempt 1: MOL2 -> PDBQT, preserve existing charges (no -C)
+    out1="$("$PYSH" "$PL4" -l "${base}.mol2" -o "$out_pdbqt" -A hydrogens -U nphs_lps 2>&1)"
+    rc1=$?
+    set -e
+    if [[ $rc1 -eq 0 ]]; then
+      popd >/dev/null
+      return 0
+    fi
+
+    # Attempt 2: MOL2 -> PDB, then ADT with -C
+    set +e
+    out2a="$("$OBABEL_BIN" -imol2 "${base}.mol2" -opdb -O "${base}.tmp.pdb" --errorlevel 1 2>&1)"; rc2a=$?
+    out2b=""; rc2b=1
+    if [[ $rc2a -eq 0 ]]; then
+      out2b="$("$PYSH" "$PL4" -l "${base}.tmp.pdb" -o "$out_pdbqt" -A hydrogens -U nphs_lps -C 2>&1)"; rc2b=$?
+    fi
+    set -e
+    rm -f "${base}.tmp.pdb" || true
+  popd >/dev/null
+
+  if [[ $rc2a -eq 0 && $rc2b -eq 0 ]]; then
+    return 0
+  else
+    {
+      echo "---- FAIL ${target_key} ${base}.sdf ----"
+      echo "[Attempt 1] MOL2 -> ADT (no -C) rc=${rc1}"
+      echo "${out1}"
+      echo "[Attempt 2] MOL2 -> PDB rc=${rc2a}"
+      echo "${out2a}"
+      echo "[Attempt 2] PDB -> ADT (-C) rc=${rc2b}"
+      echo "${out2b}"
+    } >> "${FAIL_LOG}"
+    return 1
+  fi
+}
+
+process_target_dir() {
+  local target_dir="$1"                      # e.g., .../DEKOIS2/pde4b
+  local target_key; target_key="$(basename "$target_dir")"
+  local glide_dir="${target_dir}/glide_pos"
+  [[ -d "$glide_dir" ]] || { echo "[WARN] No glide_pos for target: $target_key"; return 0; }
+
+  local out_dir="${OUT_ROOT}/$(to_lower "$target_key")/glide_pos"
+  mkdir -p "$out_dir"
+  echo "[INFO] Target: ${target_key} | IN: ${glide_dir} | OUT: ${out_dir}"
+
+  shopt -s nullglob
+  declare -a files
+  if [[ -n "$ONLY_FILE" ]]; then
+    files=( "${glide_dir}/${ONLY_FILE}.sdf" )
+  else
+    mapfile -t files < <(find "$glide_dir" -maxdepth 1 -type f -name "*.sdf" | sort)
+  fi
+
+  if [[ "${#files[@]}" -eq 0 ]]; then
+    echo "[WARN] No .sdf files in: $glide_dir"
+    return 0
+  fi
+
+  local ok=0 fail=0
+  for f in "${files[@]}"; do
+    [[ -f "$f" ]] || { echo "[WARN] Skip missing file: $f"; continue; }
+    echo "[INFO] Converting: $f"
+    if convert_one_file "$target_key" "$f" "$out_dir"; then
+      ok=$((ok+1))
+    else
+      fail=$((fail+1))
+    fi
+  done
+  echo "[INFO] Target ${target_key} done: ok=${ok} fail=${fail} total=$((ok+fail))"
+}
+
+# =========================================
+# Main
+# =========================================
+[[ -d "$ROOT_IN"  ]] || { echo "[ERROR] ROOT_IN not found: $ROOT_IN"; exit 1; }
+[[ -d "$OUT_ROOT" ]] || { echo "[ERROR] OUT_ROOT not found: $OUT_ROOT"; exit 1; }
+
+shopt -s nullglob
+declare -a target_dirs
+if [[ -n "$ONLY_TARGET" ]]; then
+  target_dirs=( "${ROOT_IN}/${ONLY_TARGET}" )
+else
+  mapfile -t target_dirs < <(find "$ROOT_IN" -mindepth 1 -maxdepth 1 -type d | sort)
+fi
+
+if [[ "${#target_dirs[@]}" -eq 0 ]]; then
+  echo "[WARN] No targets under: $ROOT_IN"
+  exit 0
+fi
+
+for tdir in "${target_dirs[@]}"; do
+  [[ -d "$tdir" ]] || continue
+  process_target_dir "$tdir"
+done
+
+echo "[ALL DONE]"
+
